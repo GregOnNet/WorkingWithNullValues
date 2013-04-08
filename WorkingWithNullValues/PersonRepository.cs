@@ -15,5 +15,18 @@ namespace WorkingWithNullValues
 
       throw new PersonNotFoundException();
     }
+
+    public bool TryFindPerson(string name, out Person person)
+    {
+      person = null;
+      foreach (var p in _persons)
+        if (p.Name == name)
+        {
+          person = p;
+          return true;
+        }
+
+      return false;
+    }
   }
 }

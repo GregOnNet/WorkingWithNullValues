@@ -2,5 +2,5 @@
 
 namespace WorkingWithNullValues
 {
-  public class PersonNotFountException : Exception {}
+  public class PersonNotFoundException : Exception {}
 }
