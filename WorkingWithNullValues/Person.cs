@@ -1,9 +1,14 @@
 ﻿namespace WorkingWithNullValues
 {
-  class Program
+  public class Person
   {
-    static void Main(string[] args)
+    public Person(string name, int age)
     {
+      Name = name;
+      Age = age;
     }
+
+    public string Name { get; set; }
+    public int Age { get; set; }
   }
 }
