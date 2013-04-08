@@ -6,7 +6,7 @@ namespace WorkingWithNullValues
   {
     static void Main()
     {
-      Person peter = null;
+      Person peter;
 
       if (DateTime.Now > new DateTime(2013, 1, 1))
       {
