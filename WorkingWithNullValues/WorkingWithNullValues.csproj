@@ -44,7 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IPerson.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="PersonNotFound.cs" />
     <Compile Include="PersonNotFoundException.cs" />
     <Compile Include="PersonRepository.cs" />
     <Compile Include="Program.cs" />

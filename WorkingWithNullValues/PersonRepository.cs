@@ -6,14 +6,13 @@ namespace WorkingWithNullValues
   {
     List<Person> _persons = new List<Person>();
 
-    public Person FindPerson(string name)
+    public IPerson FindPerson(string name)
     {
       foreach (var person in _persons)
         if (person.Name == name)
           return person;
-      
 
-      throw new PersonNotFoundException();
+      return new PersonNotFound();
     }
 
     public bool TryFindPerson(string name, out Person person)
