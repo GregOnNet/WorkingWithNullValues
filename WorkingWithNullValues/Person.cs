@@ -1,6 +1,8 @@
-﻿namespace WorkingWithNullValues
+﻿using System;
+
+namespace WorkingWithNullValues
 {
-  public class Person
+  public class Person : IPerson
   {
     public Person(string name, int age)
     {
@@ -10,5 +12,10 @@
 
     public string Name { get; set; }
     public int Age { get; set; }
+
+    public void SayHello()
+    {
+      Console.WriteLine("Hello this is {0}. I am {1} years old", Name, Age);
+    }
   }
 }
