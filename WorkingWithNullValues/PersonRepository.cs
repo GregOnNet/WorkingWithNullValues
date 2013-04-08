@@ -11,7 +11,9 @@ namespace WorkingWithNullValues
       foreach (var person in _persons)
         if (person.Name == name)
           return person;
-      return null;
+      
+
+      throw new PersonNotFoundException();
     }
   }
 }
