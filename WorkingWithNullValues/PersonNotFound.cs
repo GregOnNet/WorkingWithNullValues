@@ -1,7 +1,7 @@
 ﻿namespace WorkingWithNullValues
 {
-  public class PersonNotFound
+  public class PersonNotFound : IPerson
   {
-     
+    public void SayHello() { }
   }
 }
