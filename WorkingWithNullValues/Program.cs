@@ -6,15 +6,10 @@ namespace WorkingWithNullValues
   {
     static void Main()
     {
-      Person peter;
+      var person = new PersonRepository();
 
-      if (DateTime.Now > new DateTime(2013, 1, 1))
-      {
-        Console.WriteLine("Happy birthday Peter");
-        peter = new Person("Peter", 12);
-      }
-
-      Console.WriteLine("{0} is {1} years old", peter.Name, peter.Age);
+      if (person.IsOlderThan12("peter"))
+        Console.WriteLine("He is older than 12.");
     }
   }
 }

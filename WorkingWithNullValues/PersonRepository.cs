@@ -6,26 +6,22 @@ namespace WorkingWithNullValues
   {
     List<Person> _persons = new List<Person>();
 
-    public IPerson FindPerson(string name)
+    public Option<Person> TryFindPerson(string name)
     {
-      foreach (var person in _persons)
-        if (person.Name == name)
-          return person;
-
-      return new PersonNotFound();
-    }
-
-    public bool TryFindPerson(string name, out Person person)
-    {
-      person = null;
       foreach (var p in _persons)
         if (p.Name == name)
-        {
-          person = p;
-          return true;
-        }
+          return new Some<Person>(p);
 
-      return false;
+      return new None<Person>();
+    }
+
+    public bool IsOlderThan12(string name)
+    {
+      return
+        TryFindPerson(name)
+          .Match(
+            () => false,
+            person => person.Age > 12);
     }
   }
 }

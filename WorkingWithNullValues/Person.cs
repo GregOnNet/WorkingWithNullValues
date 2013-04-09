@@ -2,7 +2,7 @@
 
 namespace WorkingWithNullValues
 {
-  public class Person : IPerson
+  public class Person
   {
     public Person(string name, int age)
     {
