@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Infrastructure\IOption.cs" />
     <Compile Include="Infrastructure\IReason.cs" />
     <Compile Include="Reasons\NotFound.cs" />

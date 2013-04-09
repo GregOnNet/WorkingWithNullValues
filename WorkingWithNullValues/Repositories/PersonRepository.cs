@@ -1,9 +1,6 @@
 ﻿using System.Collections.Generic;
 using WorkingWithNullValues.Extensions;
-using WorkingWithNullValues.Infrastructure;
 using WorkingWithNullValues.Models;
-using WorkingWithNullValues.Reasons;
-using WorkingWithNullValues.Types;
 
 namespace WorkingWithNullValues.Repositories
 {
@@ -11,13 +8,13 @@ namespace WorkingWithNullValues.Repositories
   {
     List<Person> _persons = new List<Person>();
 
-    public IOption<Person> TryFind(string name)
+    public List<Person> TryFind(string name)
     {
       foreach (var p in _persons)
         if (p.Name == name)
-          return new Some<Person>(p);
+          return new List<Person> { p };
 
-      return new None<Person>(new NotFound());
+      return new List<Person>();
     }
 
     public bool IsOlderThan12(string name)
