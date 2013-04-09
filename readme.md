@@ -4,7 +4,7 @@ This repository holds samples of solution which helps me to deal with null value
 I was inspired by a blog post of Steffen Forkman who described the need to consider this topic.
 - [A tale of nulls – part I] (http://www.navision-blog.de/blog/2013/04/03/a-tale-of-nulls/)
 
-The history of this repository will show my progress on this subject. ;)
+The [history] (https://github.com/GregOnNet/WorkingWithNullValues/commits/master) of this repository will show my progress on this subject. ;)
 
 ## Sources I have to study
 - [10 reasons to use the F# runtime in your C# app] (http://bugsquash.blogspot.de/2011/10/10-reasons-to-use-f-runtime-in-your-c.html)
