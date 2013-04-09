@@ -1,11 +1,13 @@
 ﻿using System;
+using WorkingWithNullValues.Infrastructure;
+using WorkingWithNullValues.Types;
 
-namespace WorkingWithNullValues
+namespace WorkingWithNullValues.Extensions
 {
   public static class OptionExtensions
   {
      public static S Match<T, S>(
-       this Option<T> value,
+       this IOption<T> value,
        Func<S> ifNone,
        Func<T, S> ifSome)
      {

@@ -44,11 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Option.cs" />
-    <Compile Include="OptionExtensions.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="PersonNotFoundException.cs" />
-    <Compile Include="PersonRepository.cs" />
+    <Compile Include="Infrastructure\IOption.cs" />
+    <Compile Include="Infrastructure\IReason.cs" />
+    <Compile Include="Reasons\NotFound.cs" />
+    <Compile Include="Types\None.cs" />
+    <Compile Include="Types\Some.cs" />
+    <Compile Include="Extensions\OptionExtensions.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="CustomExceptions\PersonNotFoundException.cs" />
+    <Compile Include="Repositories\PersonRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

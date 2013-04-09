@@ -1,24 +1,29 @@
 ﻿using System.Collections.Generic;
+using WorkingWithNullValues.Extensions;
+using WorkingWithNullValues.Infrastructure;
+using WorkingWithNullValues.Models;
+using WorkingWithNullValues.Reasons;
+using WorkingWithNullValues.Types;
 
-namespace WorkingWithNullValues
+namespace WorkingWithNullValues.Repositories
 {
   public class PersonRepository
   {
     List<Person> _persons = new List<Person>();
 
-    public Option<Person> TryFindPerson(string name)
+    public IOption<Person> TryFind(string name)
     {
       foreach (var p in _persons)
         if (p.Name == name)
           return new Some<Person>(p);
 
-      return new None<Person>();
+      return new None<Person>(new NotFound());
     }
 
     public bool IsOlderThan12(string name)
     {
       return
-        TryFindPerson(name)
+        TryFind(name)
           .Match(
             () => false,
             person => person.Age > 12);

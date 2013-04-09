@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WorkingWithNullValues
+namespace WorkingWithNullValues.Models
 {
   public class Person
   {

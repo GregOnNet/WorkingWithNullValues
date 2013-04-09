@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WorkingWithNullValues
+namespace WorkingWithNullValues.CustomExceptions
 {
   public class PersonNotFoundException : Exception {}
 }
