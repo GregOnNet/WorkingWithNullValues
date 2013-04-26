@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\ForOptionTypes.cs" />
-    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Extensions\ForLists.cs" />
     <Compile Include="IOption.cs" />
     <Compile Include="None.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
