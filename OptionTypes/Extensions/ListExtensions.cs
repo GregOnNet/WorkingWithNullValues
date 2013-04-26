@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FirstSteps.Extensions
+namespace OptionTypes.Extensions
 {
   public static class ListExtensions
   {

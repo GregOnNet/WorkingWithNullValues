@@ -44,13 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Infrastructure\IOption.cs" />
     <Compile Include="Infrastructure\IReason.cs" />
     <Compile Include="Reasons\NotFound.cs" />
     <Compile Include="Types\None.cs" />
     <Compile Include="Types\Some.cs" />
-    <Compile Include="Extensions\OptionExtensions.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="CustomExceptions\PersonNotFoundException.cs" />
     <Compile Include="Repositories\PersonRepository.cs" />
@@ -59,6 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OptionTypes\OptionTypes.csproj">
+      <Project>{8f2d2957-e1b2-4c61-b37b-176b9412f985}</Project>
+      <Name>OptionTypes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
