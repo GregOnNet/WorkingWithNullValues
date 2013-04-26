@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace OptionTypes.Extensions
 {
-  public static class ListExtensions
+  public static class ForLists
   {
      public static S Match<T,S> (
        this List<T> value,
