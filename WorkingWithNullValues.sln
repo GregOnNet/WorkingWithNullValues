@@ -1,13 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstSteps", "WorkingWithNullValues\FirstSteps.csproj", "{2C6E5A0C-E0A3-443E-82D1-3D19F44284C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstSteps", "FirstSteps\FirstSteps.csproj", "{2C6E5A0C-E0A3-443E-82D1-3D19F44284C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Example", "WebApi.Example\WebApi.Example.csproj", "{A124919A-6229-472D-900F-51980C72A144}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionTypes", "OptionTypes\OptionTypes.csproj", "{8F2D2957-E1B2-4C61-B37B-176B9412F985}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionTypes.Contracts", "OptionTypes.Infrastructure\OptionTypes.Contracts.csproj", "{940EC5D1-BB8D-42C7-B097-E589CBBECC32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{952B429B-5E6A-4D33-8812-269B56688854}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
