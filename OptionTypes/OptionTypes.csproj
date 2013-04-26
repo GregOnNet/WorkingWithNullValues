@@ -43,6 +43,7 @@
     <Compile Include="Extensions\ForLists.cs" />
     <Compile Include="None.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reasons\NotFound.cs" />
     <Compile Include="Some.cs" />
   </ItemGroup>
   <ItemGroup>

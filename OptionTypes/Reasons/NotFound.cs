@@ -1,6 +1,6 @@
 using OptionTypes.Contracts;
 
-namespace FirstSteps.Reasons
+namespace OptionTypes.Reasons
 {
   public class NotFound : IReason {}
 }
