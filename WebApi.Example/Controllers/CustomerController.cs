@@ -2,6 +2,7 @@
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using OptionTypes.Extensions;
 using WebApi.Example.Repositories;
 
 namespace WebApi.Example.Controllers

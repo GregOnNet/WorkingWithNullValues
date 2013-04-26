@@ -1,4 +1,5 @@
-﻿using WebApi.Example.Models;
+﻿using OptionTypes;
+using WebApi.Example.Models;
 
 namespace WebApi.Example.Repositories
 {
