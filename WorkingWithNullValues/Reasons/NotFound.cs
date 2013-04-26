@@ -1,4 +1,4 @@
-using FirstSteps.Infrastructure;
+using OptionTypes.Contracts;
 
 namespace FirstSteps.Reasons
 {

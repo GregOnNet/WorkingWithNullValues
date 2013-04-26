@@ -87,6 +87,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OptionTypes.Infrastructure\OptionTypes.Contracts.csproj">
+      <Project>{940ec5d1-bb8d-42c7-b097-e589cbbecc32}</Project>
+      <Name>OptionTypes.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OptionTypes\OptionTypes.csproj">
       <Project>{8f2d2957-e1b2-4c61-b37b-176b9412f985}</Project>
       <Name>OptionTypes</Name>

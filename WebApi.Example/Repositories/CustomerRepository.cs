@@ -1,4 +1,5 @@
 ﻿using OptionTypes;
+using OptionTypes.Contracts;
 using WebApi.Example.Models;
 
 namespace WebApi.Example.Repositories

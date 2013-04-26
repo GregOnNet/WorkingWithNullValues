@@ -44,11 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Infrastructure\IOption.cs" />
-    <Compile Include="Infrastructure\IReason.cs" />
     <Compile Include="Reasons\NotFound.cs" />
-    <Compile Include="Types\None.cs" />
-    <Compile Include="Types\Some.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="CustomExceptions\PersonNotFoundException.cs" />
     <Compile Include="Repositories\PersonRepository.cs" />
@@ -59,10 +55,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OptionTypes.Infrastructure\OptionTypes.Contracts.csproj">
+      <Project>{940ec5d1-bb8d-42c7-b097-e589cbbecc32}</Project>
+      <Name>OptionTypes.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OptionTypes\OptionTypes.csproj">
-      <Project>{8f2d2957-e1b2-4c61-b37b-176b9412f985}</Project>
+      <Project>{8F2D2957-E1B2-4C61-B37B-176B9412F985}</Project>
       <Name>OptionTypes</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Infrastructure\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

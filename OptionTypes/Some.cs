@@ -1,4 +1,6 @@
-﻿namespace OptionTypes
+﻿using OptionTypes.Contracts;
+
+namespace OptionTypes
 {
   public class Some<T> : IOption<T>
   {

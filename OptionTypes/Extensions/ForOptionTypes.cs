@@ -1,4 +1,5 @@
 ﻿using System;
+using OptionTypes.Contracts;
 
 namespace OptionTypes.Extensions
 {
