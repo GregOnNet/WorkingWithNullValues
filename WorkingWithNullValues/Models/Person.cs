@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WorkingWithNullValues.Models
+namespace FirstSteps.Models
 {
   public class Person
   {

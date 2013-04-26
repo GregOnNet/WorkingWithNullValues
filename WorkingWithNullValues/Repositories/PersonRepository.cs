@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
-using WorkingWithNullValues.Extensions;
-using WorkingWithNullValues.Models;
+using FirstSteps.Extensions;
+using FirstSteps.Models;
 
-namespace WorkingWithNullValues.Repositories
+namespace FirstSteps.Repositories
 {
   public class PersonRepository
   {
-    List<Person> _persons = new List<Person>();
+    List<Person> _persons = new List<Person> { new Person("peter", 13) };
 
     public List<Person> TryFind(string name)
     {

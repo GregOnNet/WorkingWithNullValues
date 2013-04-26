@@ -1,6 +1,6 @@
-﻿using WorkingWithNullValues.Infrastructure;
+﻿using FirstSteps.Infrastructure;
 
-namespace WorkingWithNullValues.Types
+namespace FirstSteps.Types
 {
   public class Some<T> : IOption<T>
   {

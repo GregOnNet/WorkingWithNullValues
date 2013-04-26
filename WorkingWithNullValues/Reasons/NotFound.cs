@@ -1,6 +1,6 @@
-using WorkingWithNullValues.Infrastructure;
+using FirstSteps.Infrastructure;
 
-namespace WorkingWithNullValues.Reasons
+namespace FirstSteps.Reasons
 {
   public class NotFound : IReason {}
 }

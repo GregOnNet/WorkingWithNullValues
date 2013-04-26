@@ -1,8 +1,8 @@
 ﻿using System;
-using WorkingWithNullValues.Infrastructure;
-using WorkingWithNullValues.Types;
+using FirstSteps.Infrastructure;
+using FirstSteps.Types;
 
-namespace WorkingWithNullValues.Extensions
+namespace FirstSteps.Extensions
 {
   public static class OptionExtensions
   {
